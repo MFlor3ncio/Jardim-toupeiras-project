@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+.holes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+
+  position: relative;
+
+  margin-top: 6rem;
+}
+
+#hole{
+  width: 12rem;
+}
+
+/* Toupeira 1/2/3 */
+
+.toupeira01, .toupeira02, .toupeira03 {
+  position: absolute;
+}
+
+
+.toupeira01 {
+  animation: updow-1 1.5s 2.3s linear infinite;
+  opacity: 0;
+}
+
+.toupeira02 {
+  animation: updow-2 1.5s 2.3s linear infinite;
+  opacity: 0;
+}
+
+.toupeira03 {
+  animation: updow-3 1.5s 2.3s linear infinite;
+  opacity: 0;
+}
+
+
+/* Toupeira 4/5/6 */
+
+.toupeira04, .toupeira05, .toupeira06 {
+  position: absolute;
+  right: 0;
+  top: 37%;
+}
+
+.toupeira04 {
+  animation: updow-1 1.5s 700ms linear infinite;
+  opacity: 0;
+}
+
+.toupeira05 {
+  animation: updow-2 1.5s 700ms linear infinite;
+  opacity: 0;
+}
+
+.toupeira06 {
+  animation: updow-3 1.5s 700ms linear infinite;
+  opacity: 0;
+}
+
+
+
+/* Toupeira 7/8/9 */
+
+.toupeira07, .toupeira08, .toupeira09 {
+  position: absolute;
+  right: 26.6%;
+  bottom: 0;
+}
+
+.toupeira07 {
+  animation: updow-1 1.5s 1s linear infinite;
+  opacity: 0;
+}
+
+.toupeira08 {
+  animation: updow-2 1.5s 1s linear infinite;
+  opacity: 0;
+}
+
+.toupeira09 {
+  animation: updow-3 1.5s 1s linear infinite;
+  opacity: 0;
+}
+
+
+@keyframes updow-1 {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes updow-2 {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes updow-3 {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
